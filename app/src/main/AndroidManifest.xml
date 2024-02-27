@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Analog_clock"
         tools:targetApi="31">
         <activity
+            android:name=".DigitalScrenn"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
