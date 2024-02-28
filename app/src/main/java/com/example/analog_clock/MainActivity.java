@@ -9,6 +9,10 @@ import android.widget.AnalogClock;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
         analogclock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Analog Clock",
+                String currentTime = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date());
+                Toast.makeText(MainActivity.this,currentTime,
                         Toast.LENGTH_SHORT).show();
             }});
            next_screnn.setOnClickListener(new View.OnClickListener() {
