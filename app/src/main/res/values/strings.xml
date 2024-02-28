@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Analog_clock</string>
+    <string name="app_name">Analog/Digital clock</string>
     <string name="next_screnn">Digital Clock</string>
     <string name="name_next_screnn">Digital Clock</string>
 </resources>
